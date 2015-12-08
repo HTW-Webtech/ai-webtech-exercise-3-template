@@ -9,11 +9,11 @@ FlashCardApp.Base = function() {
   var context = $('body').data('js-context') || 'undefined';
   switch(context) {
     case 'manage':
-      return new FlashCardApp.ManagePage(); break;
+      return new FlashCardApp.ManagePage();
     case 'learn':
-      return new FlashCardApp.LearnPage(); break;
+      return new FlashCardApp.LearnPage();
     case 'start':
-      return new FlashCardApp.StartPage(); break;
+      return new FlashCardApp.StartPage();
     default:
       alert('Undefined context: ' + context);
   }
